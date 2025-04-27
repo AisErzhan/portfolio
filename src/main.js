@@ -265,12 +265,8 @@ const projectsDisplay = [
 const pdCont = document.createElement("div");
 pdCont.classList.add("projects__items");
 const renderFilteredProjects = () => {
-  // Очистка контейнера перед повторным рендером
   pdCont.innerHTML = "";
-
-  // Проход по всем проектам
   projectsDisplay.forEach((project, index) => {
-    // Если ни один чекбокс не выбран — показываем всё
     if (
       selectedTechs.size === 0 ||
       project.lang.some((lang) => selectedTechs.has(lang))
@@ -325,43 +321,6 @@ const inputEffect = {
     }
   })
   
-  
-  // const FORM_NAME = document.getElementById('formName')
-// const FORM_NAME_INP = document.getElementById('formNameInp')
-// const FORM_EMAIL = document.getElementById('formEmail')
-// const FORM_EMAIL_INP = document.getElementById('formEmailInp')
-
-// FORM_NAME_INP.addEventListener('input', () => {
-//     FORM_NAME.textContent = FORM_NAME_INP.value
-// })
-// FORM_EMAIL_INP.addEventListener('input', () => {
-//     FORM_EMAIL.textContent = FORM_EMAIL_INP.value
-// })
-
-
-// FORM_NAME_INP.addEventListener('input', () => {
-//     FORM_NAME.textContent = FORM_NAME_INP.value
-// })
-
-
-// const inputEffect = {
-//     name: {var: 'FORM_NAME', id: 'formName', inpVar: 'FORM_NAME_INP', inpId: 'formNameInp'},
-//     email: {var: 'FORM_EMAIL', id: 'formEmail', inpVar: 'FORM_EMAIL_INP', inpId: 'formEmailInp'},
-//     massage: {var: 'FORM_MASSAGE', id: 'formMassage', inpVar: 'FORM_MASSAGE_INP', inpId: 'formMassageInp'},
-//     date: {var: 'FORM_DATE', id: 'formDate', },
-//     // inpVar: 'FORM_DATE_INP', inpId: 'formDateInp'
-// }
-
-// const inputEffectArr = (type) => {
-//     const 
-// }
-// Object.keys(inputEffect).forEach((type) => {
-//     varCreater[inputEffect[type].var].addEventListener("input", () => inputEffectArr(type));
-//   });
-
-
-
-
 
 //------------------->[[[window onload]]]
 window.onload = () => {
@@ -370,148 +329,19 @@ window.onload = () => {
     {text: "Aisaev Erzhan", element: "typewriter__name", delay: 2000},
     {text: "> Front-end developer", element: "typewriter__info", delay: 4000},
     {text: "// complete the game to continue", element: "info__text--first", delay: 7500},
-    {text: "// you can also see it on my Github page", element: "info__text--second", delay: 800},
-    {text: "const", element: "info__text--git--const", delay: 14500},
-    {text: "githubLink", element: "info__text--git--git", delay: 15500},
-    {text: "=", element: "info__text--git--symbol", delay: 18000},
-    {text: "“https://github.com/AisErzhan”", element: "info__text--git--link", delay: 19000},
+    {text: "// you can also see it on my Github page", element: "info__text--second", delay: 7500},
+    {text: "const", element: "info__text--git--const", delay: 13500},
+    {text: "githubLink", element: "info__text--git--git", delay: 14500},
+    {text: "=", element: "info__text--git--symbol", delay: 16000},
+    {text: "“https://github.com/AisErzhan”", element: "info__text--git--link", delay: 16500},
   ];
-  typewriterData.forEach(({ text, element, delay }) => {
-    setTimeout(() => typeWriter(text, element, 150), delay);
-  });
+
   HIDDEN();
   renderFilteredProjects();
   HELLO_PAGE.style.display = "flex";
   varCreater.HELLO_PAGE_BTN.classList.add("active");
+  typewriterData.forEach(({ text, element, delay }) => {
+    setTimeout(() => typeWriter(text, element, 150), delay);
+  });
 };
 
-// window.onload = () => {
-//     HIDDEN();
-//     ABOUT_PAGE.style.display = 'flex';
-//     varCreater.HELLO_PAGE_BTN.classList.add('active');
-//     typeWriter('Hi all. I am', 'typewriter__hi', 150);
-//     setTimeout(() => {
-//         typeWriter('Aisaev Erzhan', 'typewriter__name', 150);
-//     }, 2000);
-//     setTimeout(() => {
-//         typeWriter('> Front-end developer', 'typewriter__info', 150);
-//     }, 4000);
-//     setTimeout(() => {
-//         typeWriter('// complete the game to continue', 'info__text--first', 150);
-//         typeWriter('// you can also see it on my Github page', 'info__text--second', 150);
-//         setTimeout(() => {
-//             typeWriter('const', 'info__text--git--const', 150);
-//         setTimeout(() => {
-//             typeWriter('githubLink', 'info__text--git--git', 150);
-//         },900);
-//         setTimeout(() => {
-//             typeWriter('=', 'info__text--git--symbol', 150);
-//         },2600);
-//         setTimeout(() => {
-//             typeWriter('“https://github.com/AisErzhan”', 'info__text--git--link', 150);
-//         },3000);
-//         },6500);
-//     }, 7500);
-// };
-
-// projects
-// for(let i = 0; i < projectsDisplay.length; i++){
-//     const pdBox = document.createElement('div')
-//     const pdLink = document.createElement('a')
-//     const pdDescript = document.createElement('span')
-//     const pdBoxTitle = document.createElement('span')
-//     const pdBoxTitleSec = document.createElement('span')
-
-//     pdBoxTitle.setAttribute('id', 'boxTitle')
-//     pdBoxTitleSec.setAttribute('id', 'boxTitleSec')
-
-//     pdBox.setAttribute('class', 'projects__items--box')
-//     pdLink.setAttribute('href', `${projectsDisplay[i].link}`)
-//     pdLink.setAttribute('target', '_blank')
-
-//     pdBoxTitle.textContent = `${projectsDisplay[i].name} ${i+1}`
-//     pdBoxTitleSec.textContent = `${projectsDisplay[i].title}`
-
-//     pdDescript.textContent = `${projectsDisplay[i].text}`
-//     pdLink.textContent = 'wiev-project'
-
-//     PROJECTS_PAGE.appendChild(pdCont)
-//     pdCont.appendChild(pdBox)
-//     pdBox.append(pdLink, pdBoxTitle, pdBoxTitleSec, pdDescript)
-// }
-
-// for(let i = 0; i < projects.length; i++){
-//     const projectsItem = document.createElement('span')
-//     const projectsInput = document.createElement('label')
-//     const projectsCheckbox = document.createElement('input')
-//     const projectsIcon = document.createElement('span')
-
-//     projectsItem.textContent = projects[i]
-//     // projectsItem.setAttribute('onclick', 'event.preventDefault()')
-
-//     projectsInput.setAttribute('class', 'projects__nav__side-bar__project__inset-active--check')
-//     projectsCheckbox.setAttribute('type', 'checkbox')
-
-//     projectsIcon.style = `background: no-repeat url(./src/img/${projects[i]}.png); opacity: .4; width: 25px; height: 25px; background-size: contain;`
-//     varCreater.PROJECTS_PAGE_NAV_INSET_ACTIVE.appendChild(projectsInput)
-//     projectsInput.append(projectsCheckbox, projectsIcon, projectsItem)
-// }
-// projectsDisplay.forEach((project, index) => {
-//     const pdBox = document.createElement('div')
-//     const pdLink = document.createElement('a')
-//     const pdDescript = document.createElement('span')
-//     const pdBoxTitle = document.createElement('span')
-//     const pdBoxTitleSec = document.createElement('span')
-
-//     // attributes
-//     pdBox.classList.add('projects__items--box')
-//     pdLink.href = project.link
-//     pdLink.target = '_blank'
-//     pdBox.style = `background: top / contain no-repeat url(./src/img/${project.name}.png)`
-
-//     // id
-//     pdBoxTitle.id = 'boxTitle'
-//     pdBoxTitleSec.id = 'boxTitleSec'
-
-//     // text
-//     pdBoxTitle.textContent = `${project.titleTemplate} ${index + 1}`
-//     pdBoxTitleSec.textContent = project.title;
-//     pdDescript.textContent = project.text
-//     pdLink.textContent = 'view-project'
-
-//     // append
-//     PROJECTS_PAGE.appendChild(pdCont)
-//     pdCont.appendChild(pdBox)
-//     pdBox.append(pdLink, pdBoxTitle, pdBoxTitleSec, pdDescript);
-// })
-
-// main inset
-
-// const insetEvent = (variableHelper,classesNames) => {
-//     const baseKey = `${variableHelper}`;
-//     varCreater[`${baseKey}`].classList.toggle('active');
-//     varCreater[`${baseKey}_INSET_ACTIVE`].classList.toggle(`${classesNames}__inset-active--on`);
-//     varCreater[`${baseKey}_INSET_ACTIVE_IN_PAGE`].classList.toggle(`${classesNames}__inset-active-in-page--on`);
-//     varCreater[`${baseKey}_INSET_ACTIVE_IN_PAGE_HELPER`].textContent = varCreater[`${baseKey}`].textContent;
-// };
-// varCreater.ABOUT_PAGE_NAV_PERSONAL.addEventListener('click', () => insetEvent('ABOUT_PAGE_NAV_PERSONAL','about-me__nav__side-bar__personal-info'));
-// varCreater.ABOUT_PAGE_NAV_CONTACTS.addEventListener('click', () => insetEvent( 'ABOUT_PAGE_NAV_CONTACTS', 'about-me__nav__side-bar__contacts'));
-// varCreater.PROJECTS_PAGE_NAV_INSET.addEventListener('click', () => insetEvent( 'PROJECTS_PAGE_NAV_INSET', 'projects__nav__side-bar__project'))
-
-// //inset closer
-// const insetCloser = document.querySelectorAll('.close-icon-btn')
-// insetCloser.forEach((btn) => {
-//     const type = btn.dataset.type
-//     const insetCloserArr = (variableHelper,classesNames) => {
-//         const baseKey = `${variableHelper}`
-//         varCreater[`${baseKey}`].classList.remove('active')
-//         varCreater[`${baseKey}_INSET_ACTIVE`].classList.remove(`${classesNames}__inset-active--on`);
-//         varCreater[`${baseKey}_INSET_ACTIVE_IN_PAGE`].classList.remove(`${classesNames}__inset-active-in-page--on`);
-//     }
-// btn.addEventListener('click', () => {
-//     type === 'personal' ? insetCloserArr('ABOUT_PAGE_NAV_PERSONAL', 'about-me__nav__side-bar__personal-info') :
-//     type === 'contacts' ? insetCloserArr('ABOUT_PAGE_NAV_CONTACTS', 'about-me__nav__side-bar__contacts') :
-//     type === 'projects' ? insetCloserArr('PROJECTS_PAGE_NAV_INSET', 'projects__nav__side-bar__project') : null ;
-
-// });
-// })
