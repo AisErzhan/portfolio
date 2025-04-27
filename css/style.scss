@@ -5,9 +5,9 @@
   font-family: "Fira Code", monospace;
   font-weight: 300;
   font-style: normal;
-  color: #607B96;
+  color: #607b96;
 }
-.page{
+.page {
   overflow: hidden;
   position: relative;
   background-color: #011627;
@@ -21,27 +21,28 @@ a {
   cursor: pointer;
   text-decoration: none;
   user-select: none;
-  transition: .2s;
-  &:hover{
+  transition: 0.2s;
+  &:hover {
     color: #fff;
   }
 }
-span{
+span {
   user-select: none;
 }
-.info__text{
-  color: #607B96;
+.info__text {
+  color: #607b96;
   margin-bottom: 10px;
-  line-height: 20px
+  line-height: 20px;
 }
-.active{
-  color: #fff
+.active {
+  color: #fff;
 }
 
 @import "./header";
 @import "./hello.scss";
-@import './about-me';
-@import './projects';
-@import './contacts';
+@import "./about-me";
+@import "./projects";
+@import "./contacts";
 @import "./footer";
+@import "./responsive";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");

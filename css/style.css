@@ -6,7 +6,7 @@
   font-family: "Fira Code", monospace;
   font-weight: 300;
   font-style: normal;
-  color: #607B96;
+  color: #607b96;
 }
 
 .page {
@@ -40,7 +40,7 @@ span {
 }
 
 .info__text {
-  color: #607B96;
+  color: #607b96;
   margin-bottom: 10px;
   line-height: 20px;
 }
@@ -393,7 +393,7 @@ canvas {
 }
 .about-me__personal-info-content {
   height: 100vh;
-  width: 35%;
+  width: 45%;
   border-right: 1px solid #1e2d3d;
   position: absolute;
   overflow-y: scroll;
@@ -409,6 +409,9 @@ canvas {
 }
 .about-me__personal-info-content__box {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   top: 20px;
   left: 60px;
   padding: 0px 0 200px 0;
@@ -421,6 +424,9 @@ canvas {
   position: relative;
   left: -9.5px;
   white-space: pre;
+}
+.about-me--title {
+  color: #fff;
 }
 
 .projects {
@@ -883,4 +889,55 @@ canvas {
 }
 .footer .fa-github:hover {
   color: #397fda;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+  }
+  .hello {
+    overflow: hidden;
+    gap: 150px;
+    color: white;
+    overflow: scroll;
+  }
+  .hello__info-side {
+    padding: 115px 0 0px 80px;
+    width: 100%;
+    white-space: wrap;
+  }
+  .hello__info-side--first h1 {
+    font-size: 62px;
+  }
+  .hello__info-side--first .typing {
+    color: white;
+  }
+  .hello__info-side--first h2 {
+    font-size: 32px;
+    color: #43D9AD;
+  }
+  .hello__info-side--second {
+    margin-top: 90px;
+  }
+  .hello__info-side--second__game {
+    display: none;
+  }
+  .hello__game {
+    display: none;
+  }
+  #info__text--git :nth-child(1) {
+    color: #4d5bce;
+  }
+  #info__text--git :nth-child(2) {
+    color: #43d9ad;
+  }
+  #info__text--git :nth-child(3) {
+    color: white;
+  }
+  #info__text--git :nth-child(4) {
+    color: #e99287;
+  }
+  .footer {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
