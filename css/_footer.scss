@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #011627;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #1e2d3d;
+  color: #607b96;
+  line-height: 16px;
+  bottom: 0;
+  z-index: 1;
+  &__nav {
+    display: flex;
+    &--info{
+        
+    }
+    &--git{
+        margin-left: 10px;
+        &--link{
+            color: #607B96;
+            border-left: 1px solid #1e2d3d;
+            line-height: 50px;
+            padding: 0 5px 0 20px;
+            transition: .5s;
+            &:hover{
+                color: #ffff;
+            }
+        }
+    }
+    &--helper {
+        height: 50px;
+        display: flex;
+        align-items: center;
+      border-right: 1px solid #1e2d3d;
+      padding: 0 20px;
+
+    }
+  }
+  .fa-brands{
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #607B96;
+    transition: .5s;
+  }
+  
+  .fa-instagram:hover{
+    color: #c13584;
+  }
+  .fa-telegram:hover{
+    color: #0088cc;
+  }
+  .fa-github:hover{
+    color: #397fda;
+  }
+}

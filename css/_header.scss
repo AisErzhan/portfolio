@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  height: 57px;
+  background-color: #011627;
+  position: absolute;
+  font-size: 16px;
+  border-bottom: 1px solid #1e2d3d;
+  z-index: 1;
+  & .nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    & .item-box {
+      padding: 17px 32px;
+      border-left: 1px #1e2d3d solid;
+      color: #607b96;
+      transition: .5s;
+      &:first-child {
+        border-left: none;
+      }
+      &:hover{
+        color: #ffffff;
+      }
+    }
+    & .active {
+      color: #ffff;
+      border-bottom: 1px solid #fea55f;
+    }
+    & .main-item {
+      display: flex;
+    }
+  }
+  &__logo {
+    width: 310px;
+  }
+  &__projects {
+    border-right: 1px solid #1e2d3d;
+  }
+  &__contacts {
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aisaev Erzhan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f92506963.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <div class="main-item"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <a href="./index.html" class="logo page"> </a>
+      <section class="hello page">
+        <div class="hello__info-side">
+          <div class="hello__info-side--first">
+            <h3 id="typewriter__hi" class="typing"></h3>
+            <h1 id="typewriter__name" class="typing"></h1>
+            <h2 id="typewriter__info"></h2>
+          </div>
+          <div class="hello__info-side--second">
+            <div
+              id="info__text--first"
+              class="info__text hello__info-side--second__game"
+            ></div>
+            <div
+              id="info__text--second"
+              class="info__text hello__info-side--second__git"
+            ></div>
+
+            <div id="info__text--git" class="info__text">
+              <span id="info__text--git--const"></span>
+              <span id="info__text--git--git"></span>
+              <span id="info__text--git--symbol"></span>
+              <a
+                target="_blank"
+                id="info__text--git--link"
+                href="https://github.com/AisErzhan"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="hello__game">
+          <img src="./src/img/Green.png" class="hello__game--green" />
+          <img src="./src/img/Blue.png" class="hello__game--blue" />
+          <div class="hello__game--block">
+            <img src="./src/img/Background.svg" alt="" />
+            <span class="hello__game--block--bolt-up"></span>
+            <span class="hello__game--block--bolt-down"></span>
+            <canvas id="snake-game" class="hello__game--block--snake"> </canvas>
+            <img
+              src="./src/img/Background Snake.png"
+              class="hello__game--block--snake"
+              alt=""
+            />
+            <div class="hello__game--block--info">
+              // use keyboard
+              <br />// arrows to play
+              <div class="hello__game--block--info--arrows-vertical"></div>
+              <div class="hello__game--block--info--arrows-horizontal"></div>
+            </div>
+            <a class="hello__game--block--snake-start">start-game</a>
+            <div class="hello__game--block--food">// food left</div>
+          </div>
+        </div>
+      </section>
+      <section class="about-me page">
+        <div class="about-me__nav">
+          <div class="about-me__nav__info">
+            <a href="#" class="about-me__nav__info--professional">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity=".4" clip-path="url(#clip0_64_1623)">
+                  <path
+                    d="M3 3.65186H21C21.2652 3.65186 21.5196 3.75721 21.7071 3.94475C21.8946 4.13228 22 4.38664 22 4.65186V20.6519C22 20.9171 21.8946 21.1714 21.7071 21.359C21.5196 21.5465 21.2652 21.6519 21 21.6519H3C2.73478 21.6519 2.48043 21.5465 2.29289 21.359C2.10536 21.1714 2 20.9171 2 20.6519V4.65186C2 4.38664 2.10536 4.13228 2.29289 3.94475C2.48043 3.75721 2.73478 3.65186 3 3.65186ZM12 15.6519V17.6519H18V15.6519H12ZM8.414 12.6519L5.586 15.4799L7 16.8949L11.243 12.6519L7 8.40886L5.586 9.82386L8.414 12.6519Z"
+                    fill="#607B96"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_64_1623">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.651855)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="about-me__nav__info--personal">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity=".4" clip-path="url(#clip0_64_1620)">
+                  <path
+                    d="M5 20.6519H19V22.6519H5V20.6519ZM12 18.6519C9.87827 18.6519 7.84344 17.809 6.34315 16.3087C4.84285 14.8084 4 12.7736 4 10.6519C4 8.53012 4.84285 6.49529 6.34315 4.995C7.84344 3.49471 9.87827 2.65186 12 2.65186C14.1217 2.65186 16.1566 3.49471 17.6569 4.995C19.1571 6.49529 20 8.53012 20 10.6519C20 12.7736 19.1571 14.8084 17.6569 16.3087C16.1566 17.809 14.1217 18.6519 12 18.6519Z"
+                    fill="#607B96"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_64_1620">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.651855)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="" class="about-me__nav__info--hobbies">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.4" clip-path="url(#clip0_64_1617)">
+                  <path
+                    d="M17 4.87793C18.5913 4.87793 20.1174 5.51007 21.2426 6.63529C22.3679 7.76051 23 9.28663 23 10.8779V14.8779C23 16.4692 22.3679 17.9954 21.2426 19.1206C20.1174 20.2458 18.5913 20.8779 17 20.8779H7C5.4087 20.8779 3.88258 20.2458 2.75736 19.1206C1.63214 17.9954 1 16.4692 1 14.8779V10.8779C1 9.28663 1.63214 7.76051 2.75736 6.63529C3.88258 5.51007 5.4087 4.87793 7 4.87793H17ZM10 9.87793H8V11.8779H6V13.8779H7.999L8 15.8779H10L9.999 13.8779H12V11.8779H10V9.87793ZM18 13.8779H16V15.8779H18V13.8779ZM16 9.87793H14V11.8779H16V9.87793Z"
+                    fill="#607B96"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_64_1617">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.87793)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="about-me__nav__side-bar">
+            <div class="about-me__nav__side-bar">
+              <a class="about-me__nav__side-bar__personal-info">
+                <div class="about-me__nav__side-bar__personal-info__inset">
+                  <span id="vector"
+                    ><img src="./src/img/Vector.png" alt="" /></span
+                  >personal-info
+                </div>
+              </a>
+              <div class="about-me__nav__side-bar__personal-info__inset-active">
+                <a
+                  class="about-me__nav__side-bar__personal-info__inset-active--pages bio"
+                  ><span id="vector"
+                    ><img src="./src/img/Vector2.png" alt=""
+                  /></span>
+                  <span id="vector"
+                    ><img src="./src/img/Vector3.png" alt=""
+                  /></span>
+                  bio</a
+                >
+                <a
+                  class="about-me__nav__side-bar__personal-info__inset-active--pages interests"
+                  ><span id="vector"
+                    ><img src="./src/img/Vector2.png" alt=""
+                  /></span>
+                  <span id="vector"
+                    ><img src="./src/img/Vector5.png" alt=""
+                  /></span>
+                  interests</a
+                >
+                <a
+                  class="about-me__nav__side-bar__personal-info__inset-active--pages edu"
+                  ><span id="vector"
+                    ><img src="./src/img/Vector2.png" alt=""
+                  /></span>
+                  <span id="vector"
+                    ><img src="./src/img/Vector4.png" alt=""
+                  /></span>
+                  education</a
+                >
+                <div
+                  class="about-me__nav__side-bar__personal-info__inset-active--pages--edu"
+                >
+                  <a
+                    class="about-me__nav__side-bar__personal-info__inset-active--pages school"
+                    >high-school</a
+                  >
+                  <a
+                    class="about-me__nav__side-bar__personal-info__inset-active--pages university"
+                    >university</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="about-me__nav__side-bar">
+              <a class="about-me__nav__side-bar__contacts">
+                <div class="about-me__nav__side-bar__contacts__inset">
+                  <span id="vector"
+                    ><img src="./src/img/Vector.png" alt="" /></span
+                  >contacts
+                </div>
+              </a>
+              <div class="about-me__nav__side-bar__contacts__inset-active">
+                <div class="">
+                  <img
+                    src="./src/img/mail-icon.png"
+                    class="mail-icon"
+                    alt=""
+                  /><a href="mailto:aisaev.erzhan@gmail.com" target="_blank" class="email">erzhan@gmail.com</a>
+                </div>
+                <div class="">
+                  
+                  <img
+                    src="./src/img/phone-icon.png"
+                    class="phone-icon"
+                    alt=""
+                  /><a href="tel:+996700802964" target="_blank" >+996700802964</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="about-me__nav__side-bar__personal-info__inset-active-in-page"
+        >
+          <div
+            class="about-me__nav__side-bar__personal-info__inset-active-in-page-helper"
+          ></div>
+          <img class="close-icon-btn" data-type="personal" src="./src/img/close-icon.png" alt="" />
+        </div>
+        <div class="about-me__nav__side-bar__contacts__inset-active-in-page">
+          <div
+            class="about-me__nav__side-bar__contacts__inset-active-in-page-helper"
+          ></div>
+          <img class="close-icon-btn" data-type="contacts" src="./src/img/close-icon.png" alt="" />
+        </div>
+        <div class="about-me__personal-info-content">
+          <div class="about-me__personal-info-content__box">
+            <p><span>1</span> <span>*//</span></p>
+            <p><span>2</span> <span>* about-me</span></p>
+            <p><span>3</span> <span>* about-me</span></p>
+            <p><span>4</span> <span>* about-me</span></p>
+            <p><span>5</span> <span>* about-me</span></p>
+            <p><span>6</span> <span>* about-me</span></p>
+            <p><span>7</span> <span>* about-me</span></p>
+            <p><span>8</span> <span>* about-me</span></p>
+            <p><span>9</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>11</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>10</span> <span>* about-me</span></p>
+            <p class="helper"><span>12</span> <span>* about-me</span></p>
+            <p class="helper"><span>111</span> <span>* about-me</span></p>
+
+          </div>
+        </div>
+      </section>
+      
+      <section class="projects page">
+        <div class="projects__nav">
+          <div class="projects__nav__side-bar">
+            <a class="projects__nav__side-bar__project">
+              <div class="projects__nav__side-bar__project__inset">
+                <span id="vector"
+                    ><img src="./src/img/Vector.png" alt="" /></span
+                  >
+                  projects
+              </div>
+            </a>
+          </div>
+          <div class="projects__nav__side-bar__project__inset-active"></div>
+        </div>
+        <div class="projects__nav__side-bar__project__inset-active-in-page">
+          <div
+            class="projects__nav__side-bar__project__inset-active-in-page-helper"
+          ></div>
+          <img class="close-icon-btn" data-type="projects" src="./src/img/close-icon.png" alt="" />
+        </div>
+      </section>
+      <section class="contacts page">
+        <div class="contacts__nav">
+          <div class="contacts__nav__side-bar">
+            <a class="contacts__nav__side-bar__contacts">
+              <div class="contacts__nav__side-bar__contacts__inset">
+                <span id="vector"
+                  ><img src="./src/img/Vector.png" alt="" /></span
+                >contacts
+              </div>
+            </a>
+            <div class="contacts__nav__side-bar__contacts__inset-active">
+              <span class="">
+                <img
+                  src="./src/img/mail-icon.png"
+                  class="mail-icon"
+                  alt=""
+                /><a href="mailto:aisaev.erzhan@gmail.com" target="_blank" class="email">erzhan@gmail.com</a>
+              </span>
+              <span class="">
+                
+                <img
+                  src="./src/img/phone-icon.png"
+                  class="phone-icon"
+                  alt=""
+                /><a href="tel:+996700802964" target="_blank" >+996700802964</a>
+              </span>
+            </div>
+            <a class="contacts__nav__side-bar__find-me">
+              <div class="contacts__nav__side-bar__find-me__inset">
+                <span id="vector"
+                  ><img src="./src/img/Vector.png" alt="" /></span
+                >find-me-also-in
+              </div>
+            </a>
+            <div class="contacts__nav__side-bar__find-me__inset-active">
+              <span class="">
+                <img
+                  src="./src/img/link-icon.png"
+                  class="mail-icon"
+                  alt=""
+                /><a href="https://www.youtube.com/channel/UCxJ0TTsHvmpOc96uaxWWsIg" target="_blank" class="email">YouTube channel</a>
+              </span>
+              <span class="">
+                <img
+                  src="./src/img/link-icon.png"
+                  class="phone-icon"
+                  alt=""
+                /><a href="https://www.instagram.com/ais.erzhan/" target="_blank" >Instagram accaunt</a>
+              </span>
+            </div>
+          </div>
+          <div class="contacts__nav__side-bar__contacts__inset-active"></div>
+        </div>
+        <div class="contacts__nav__side-bar__contacts__inset-active-in-page">
+          <div
+            class="contacts__nav__side-bar__contacts__inset-active-in-page-helper"
+          ></div>
+          <img class="close-icon-btn" data-type="contactsPage" src="./src/img/close-icon.png" alt="" />
+        </div>
+        <div class="contacts__nav__side-bar__find-me__inset-active-in-page">
+          <div
+            class="contacts__nav__side-bar__find-me__inset-active-in-page-helper"
+          ></div>
+          <img class="close-icon-btn" data-type="findMe" src="./src/img/close-icon.png" alt="" />
+          </div>
+          <div class="contacts__form">
+            <div class="contacts__form__container">
+                <form id="contact-form" class="contacts__form__container__box">
+                  <span id="name"><input id="formNameInp" type="text" name="user_name" required></span>
+                  <span id="email"><input id="formEmailInp" type="email" name="user_email" required></span>
+                  <span id="message"><textarea id="formMassageInp" name="message" required></textarea></span>
+                  <button class="form-btn" type="submit">submit-message</button>
+                </form>
+            </div>
+            <div class="contacts__form__copy">
+              <p><span>1</span> <span ><span class="pink">const&nbsp</span><span class="violet">button <span class="pink">=</span> document.querySelector<span>(</span><span class="orange">'#sendBtn'</span><span>);</span></span>
+              </span></p>
+              <p><span>2</span> <span></span></p>
+              <p><span>3</span> <span><span class="pink">const&nbsp</span><span class="violet"> message&nbsp</span> <span class="pink">=&nbsp</span> &#123</span></p>
+              <p><span>4</span> <span><span class="violet">name:&nbsp<span class="orange">"<span class="orange" id="formName"></span>"</span></span>,</span></p>
+              <p><span>5</span> <span><span class="violet">email:&nbsp<span class="orange">"<span class="orange" id="formEmail"></span>"</span></span>,</span></p>
+              <p><span>6</span> <span><span class="violet text-flex">massage:&nbsp<span class="orange">"<span class="orange" id="formMassage"></span>"<span>,</span></span></span></span></p>
+              <p><span>7</span> <span>date:&nbsp<span class="orange">"<span class="orange" id="formDate"></span>"</span></span></p>
+              <p><span>8</span> <span>&#125</span></p>
+              <p><span>9</span> <span></span></p>
+              <p class="helper" ><span>10</span><span><span class="violet">button<span>.</span>addEventListener</span>(<span class="orange">'click'</span> , ()&nbsp <span class="pink">=>&nbsp</span> &#123</span></p>
+              <p class="helper"><span>11</span><span><span class="violet">form<span>.</span>send</span> (<span class="violet">massage</span>);</span></p>
+              <p class="helper"><span>12</span><span>&#125)</span></p>
+            </div>
+          </div>
+          <div class="contacts__form__submited">
+            <h2>Thank you! 🤘</h2>
+            <h3>Your message has been accepted. You will recieve answer really soon!</h3>
+            <button id="form-back" class="form-btn">send-new-message</button>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__nav">
+        <div class="footer__nav--helper footer__nav--info">find me in:</div>
+        <a
+          href="https://www.instagram.com/ais.erzhan/"
+          target="_blank"
+          class="footer__nav--helper"
+          ><i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://t.me/Yamma_G"
+          target="_blank"
+          class="footer__nav--helper"
+          ><i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+      <div class="footer__nav footer__nav--git">
+        <a
+          href=" https://github.com/AisErzhan"
+          target="_blank"
+          class="footer__nav--helper"
+          ><span class="footer__nav--git--link">@AisErzhan</span
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./src/feedback.js"></script>
+  </body>
+</html>
+
+<!-- template_w19ihkf pk 7aptHHGNl2E8MqTkZ -->

@@ -1,0 +1,191 @@
+.hello {
+  gap: 150px;
+  color: #ffff;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 14px;  
+  }
+&::-webkit-scrollbar-thumb {
+    background: #607B96; 
+  }
+  &__info-side {
+    padding: 315px 0 0px 310px;
+    width: 50%;
+    white-space: nowrap;
+    &--first {
+      h1 {
+        font-size: 62px;
+      }
+      .typing{
+        color: #ffff;
+      }
+      h2 {
+        font-size: 32px;
+        color: #4d5bce;
+      }
+    }
+    &--second {
+      margin-top: 90px;
+    }
+  }
+  &__game {
+    position: absolute;
+    top: 235px;
+    right: 150px;
+    width: 450px;
+    height: 540px;
+    z-index: 1;
+    &--green {
+      position: absolute;
+      top: -150px;
+      left: -150px;
+      height: 490px;
+      width: 450px;
+    }
+    &--blue {
+      position: absolute;
+      bottom: -100px;
+      left: 150px;
+      width: 450px;
+      height: 490px;
+    }
+    &--block {
+      position: absolute;
+      width: 510px;
+      height: 475px;
+      &--bolt {
+        &-up::before,
+        &-up::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          background: url(../src/img/bolt-up-left.svg);
+        }
+        &-up::before {
+          top: 10px;
+          left: 10px;
+        }
+        &-up::after {
+          top: 10px;
+          right: 10px;
+        }
+        &-down::before,
+        &-down::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+        }
+        &-down::before {
+          bottom: 5px;
+          left: 10px;
+          background: url(../src/img/bolt-down-left.svg);
+        }
+        &-down::after {
+          bottom: 5px;
+          right: 10px;
+          background: url(../src/img/bolt-down-right.svg);
+        }
+      }
+      &--snake {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        width: 240px;
+        height: 400px;
+        &-start{
+          position: absolute;
+          border-radius: 8px;
+          padding: 10px 15px;
+          background: #FEA55F;
+          left: 92px;
+          bottom: 85px;
+          color: #01080E;
+          font-size: 14px;
+        }
+      }
+      &--info {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 180px;
+        border-radius: 8px;
+        height: 140px;
+        background-color: #01192630;
+        color: #ffff;
+        padding: 15px;
+        font-size: 14px;
+        &--arrows {
+          position: absolute;
+          &-vertical {
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              left: 65px;
+              width: 49px;
+              height: 30px;
+            }
+            &::before {
+              background: no-repeat url("../src/img/Up\ Arrow.png");
+              top: 65px;
+            }
+            &::after {
+              bottom: 14px;
+              background: url("../src/img/Down\ Arrow\.png");
+            }
+          }
+          &-horizontal {
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 14px;
+              width: 49px;
+              height: 30px;
+            }
+            &::before {
+              background: no-repeat url("../src/img/Left\ Arrow.png");
+              left: 15px;
+            }
+            &::after {
+              background: url("../src/img/Right\ Arrow.png");
+              right: 15px;
+            }
+          }
+        }
+      }
+      &--food{
+        position: absolute;
+        font-size: 14px;
+        top: 195px;
+        right: 80px;
+        color: #fff;
+        width: 120px;
+        height: 70px;
+      }
+    }
+  }
+}
+#info__text--git {
+  :nth-child(1) {
+    color: #4d5bce;
+  }
+  :nth-child(2) {
+    color: #43d9ad;
+  }
+  :nth-child(3) {
+    color: #ffff;
+  }
+  :nth-child(4) {
+    color: #e99287;
+  }
+}
+ canvas{
+  width: 240px;
+  height: 400px;
+  // background-color: red;
+  border-radius: 8px;
+}
