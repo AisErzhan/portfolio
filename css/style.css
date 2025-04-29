@@ -216,6 +216,7 @@ span {
 }
 .hello__game--block--snake--points {
   position: absolute;
+  display: none;
   top: 60px;
   left: 40px;
   color: #fff;

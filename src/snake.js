@@ -8,6 +8,7 @@ const rows = canvas.height / box;
 const gameOver = document.querySelector('.hello__game--block--snake--game-over');
 const again = document.querySelector('.hello__game--block--snake--again');
 const starter = document.querySelector('.hello__game--block--snake--start');
+const points = document.querySelector('.hello__game--block--snake--points')
 
 let snake;
 let direction;
@@ -43,6 +44,7 @@ function startGame() {
   gameOver.style.display = 'none';
   again.style.display = 'none';
   starter.style.display = 'none';
+  points.style.display = 'block';
 
   if (game) clearInterval(game);
   game = setInterval(draw, 120);
