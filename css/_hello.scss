@@ -95,7 +95,7 @@
         left: 30px;
         width: 240px;
         height: 400px;
-        &-start{
+        &--start{
           position: absolute;
           border-radius: 8px;
           padding: 10px 15px;
@@ -103,6 +103,29 @@
           left: 92px;
           bottom: 85px;
           color: #01080E;
+          font-size: 14px;
+        }
+        &--game-over{
+          display: none;
+          position: absolute;
+          top: 280px;
+          left: 30px;
+          background-color: #011627;
+          color: #43d9ad;
+          padding: 15px 48px;
+          font-size: 24px;
+        }
+        &--again{
+          display: none;
+          position: absolute;
+          top: 360px;
+          left: 100px;
+        }
+        &--points{
+          position: absolute;
+          top: 60px;
+          left: 40px;
+          color: #fff;
           font-size: 14px;
         }
       }
@@ -184,8 +207,11 @@
   }
 }
  canvas{
-  width: 240px;
-  height: 400px;
-  // background-color: red;
+  // width: 240px;
+  // height: 400px;
+  background: url(../src/img/Background\ Snake.png); 
   border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+  color: #43d9ac00;
 }

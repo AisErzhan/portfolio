@@ -188,7 +188,7 @@ span {
   width: 240px;
   height: 400px;
 }
-.hello__game--block--snake-start {
+.hello__game--block--snake--start {
   position: absolute;
   border-radius: 8px;
   padding: 10px 15px;
@@ -196,6 +196,29 @@ span {
   left: 92px;
   bottom: 85px;
   color: #01080E;
+  font-size: 14px;
+}
+.hello__game--block--snake--game-over {
+  display: none;
+  position: absolute;
+  top: 280px;
+  left: 30px;
+  background-color: #011627;
+  color: #43d9ad;
+  padding: 15px 48px;
+  font-size: 24px;
+}
+.hello__game--block--snake--again {
+  display: none;
+  position: absolute;
+  top: 360px;
+  left: 100px;
+}
+.hello__game--block--snake--points {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: #fff;
   font-size: 14px;
 }
 .hello__game--block--info {
@@ -267,9 +290,11 @@ span {
 }
 
 canvas {
-  width: 240px;
-  height: 400px;
+  background: url(../src/img/Background\ Snake.png);
   border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+  color: rgba(67, 217, 172, 0);
 }
 
 .about-me {

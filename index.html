@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aisaev Erzhan</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/6f92506963.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header class="header">
@@ -55,20 +51,18 @@
             <img src="./src/img/Background.svg" alt="" />
             <span class="hello__game--block--bolt-up"></span>
             <span class="hello__game--block--bolt-down"></span>
-            <canvas id="snake-game" class="hello__game--block--snake"> </canvas>
-            <img
-              src="./src/img/Background Snake.png"
-              class="hello__game--block--snake"
-              alt=""
-            />
+            <canvas id="snake-game" class="hello__game--block--snake" width="240" height="400"></canvas>
+            <span class="hello__game--block--snake--game-over">GAME OVER!</span>
+            <a  class="hello__game--block--snake--again">start-again</a>
             <div class="hello__game--block--info">
               // use keyboard
               <br />// arrows to play
               <div class="hello__game--block--info--arrows-vertical"></div>
               <div class="hello__game--block--info--arrows-horizontal"></div>
             </div>
-            <a class="hello__game--block--snake-start">start-game</a>
-            <div class="hello__game--block--food">// food left</div>
+            <a class="hello__game--block--snake--start">start-game</a>
+            <span class="hello__game--block--snake--points">Points:</span>
+            <!-- <div class="hello__game--block--food">// food left</div> -->
           </div>
         </div>
       </section>
@@ -274,14 +268,13 @@
             <p class="helper"><span>19</span> <span>* Turkish: Conversational</span></p>
             <p class="helper"><span>20</span> <span class="about-me--title">//Interests:</span></p>
             <p class="helper"><span>21</span> <span>* Programming</span></p>
-            <p class="helper"><span>22</span> <span>* Boxing</span></p>
+            <p class="helper"><span>22</span> <span>* Gaming</span></p>
             <p class="helper"><span>23</span> <span>* Much more...</span></p>
             <p class="helper"><span>24</span> <span class="about-me--title">//Projects:</span></p>
             <p class="helper"><span>25</span> <a href="https://github.com/AisErzhan">* >GitLink</a></p>
           </div>
         </div>
       </section>
-      
       <section class="projects page">
         <div class="projects__nav">
           <div class="projects__nav__side-bar">
@@ -427,9 +420,12 @@
       </div>
     </footer>
     <script src="./src/main.js"></script>
+    <script src="./src/snake.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./src/feedback.js"></script>
+    <script
+    src="https://kit.fontawesome.com/6f92506963.js"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
-
-<!-- template_w19ihkf pk 7aptHHGNl2E8MqTkZ -->
