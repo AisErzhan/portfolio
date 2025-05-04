@@ -249,7 +249,7 @@ const projectsDisplay = [
     titleTemplate: "Project",
     title: "// _css-icons",
     link: "https://aiserzhan.github.io/icons-css/",
-    text: "test3",
+    text: "Styled icons",
     lang: ["HTML", "CSS"],
   },
 
@@ -259,6 +259,14 @@ const projectsDisplay = [
     title: "// _login-js",
     link: "https://aiserzhan.github.io/loginjs-localstorage/#",
     text: "Login JS",
+    lang: ["JavaScript"],
+  },
+  {
+    name: "template",
+    titleTemplate: "Project",
+    title: "// _random-user",
+    link: "https://aiserzhan.github.io/randomUser/",
+    text: "Random user API",
     lang: ["JavaScript"],
   },
 ];
